@@ -1,0 +1,39 @@
+<!--pages/zujian/view/movable-view/movable-view.wxml-->
+<view class='h1'>movable-area区域小于 movable-view </view>
+<movable-area>
+  <movable-view style="width:300px;height:300px;" direction="all"
+  bindchange="move">test
+  </movable-view>
+</movable-area>
+
+<view class='h1'>movable-area区域大于 movable-view </view>
+<movable-area>
+  <movable-view direction="all" x="{{x}}" y="{{y}}">test
+  </movable-view>
+</movable-area>
+<button bindtap='moveXY' style='border:2px solid black;margin:5px'>click me move to (30,30)</button>
+
+<view class='h1'>direction:vertical,限定y轴移动</view>
+<movable-area>
+  <movable-view direction="vertical">test
+  </movable-view>
+</movable-area>
+
+<view class='h1'>direction:horizontal,限定x轴移动</view>
+<movable-area>
+  <movable-view direction="horizontal">test
+  </movable-view>
+</movable-area>
+
+<view class='h1'>惯性inertia</view>
+<movable-area>
+  <movable-view direction="all" inertia>test
+  </movable-view>
+</movable-area>
+
+<view class='h1'>缩放scale</view>
+<movable-area>
+  <movable-view direction="all" scale scale-min="0.5" scale-max="3"
+  bindscale="scale">test
+  </movable-view>
+</movable-area>

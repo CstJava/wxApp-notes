@@ -1,0 +1,11 @@
+/* pages/zujian/view/view/view.wxss */
+
+.nohover{
+  border: 2px solid black;
+  width: 70px;
+}
+
+.hover{
+  background: skyblue;
+  transition: all 0.2s;
+}

@@ -1,0 +1,26 @@
+<!--pages/zujian/form/picker/picker.wxml-->
+<view class='h1'>普通选择器</view>
+<picker bindchange='bindPickerChange' value='{{index}}' range="{{array}}">
+  <view>当前选择:{{array[index]}}</view>
+</picker>
+
+<view class='h1'>多项选择器</view>
+<picker mode="multiSelector" bindchange='bindMultiPickerChange'
+bindcolumnchange="bindMultiPickerColumnChange" value='{{multiIndex}}' range="{{multiArray}}">
+  <view>当前选择:{{multiArray[0][multiIndex[0]]}},{{multiArray[1][multiIndex[1]]}},{{multiArray[2][multiIndex[2]]}}</view>
+</picker>
+
+<view class='h1'>时间选择器</view>
+<picker bindchange='bindTimeChange' mode="time" value='{{time}}' start="09:01" end="21:01">
+  <view>当前选择:{{time}}</view>
+</picker>
+
+<view class='h1'>日期选择器</view>
+<picker bindchange='bindDateChange' mode="date" value='{{date}}' start="2015-09-01" end="2018-6-12">
+  <view>当前选择:{{date}}</view>
+</picker>
+
+<view class='h1'>地区选择器</view>
+<picker bindchange='bindRegionChange' mode="region" value='{{region}}' custom-item="{{customItem}}">
+  <view>当前选择:{{region[0]}},{{region[1]}},{{region[2]}}</view>
+</picker>

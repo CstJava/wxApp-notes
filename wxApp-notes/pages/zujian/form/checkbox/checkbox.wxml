@@ -1,0 +1,6 @@
+<!--pages/zujian/form/checkbox/checkbox.wxml-->
+<checkbox-group bindchange="checkboxChange">
+  <label wx:for="{{items}}">
+    <checkbox value='{{item.name}}'>{{item.value}}</checkbox>
+  </label>
+</checkbox-group>

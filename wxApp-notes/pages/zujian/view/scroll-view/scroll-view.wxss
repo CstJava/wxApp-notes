@@ -1,0 +1,18 @@
+/* pages/zujian/view/scroll-view/scroll-view.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.outer{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.scroll-view-item{
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+}

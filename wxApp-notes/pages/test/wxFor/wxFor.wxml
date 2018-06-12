@@ -1,0 +1,8 @@
+<!--pages/test/wxFor/wxFor.wxml-->
+<view wx:for="{{array}}" wx:for-item="i" wx:key="arrayI">
+  <text wx:for="{{array}}" wx:for-item="j" wx:key="arrayJ">
+    <text wx:if="{{i<=j}}">{{i}}*{{j}}={{i*j}} </text>
+  </text>
+</view>
+<button bindtap='test'>array--</button>
+

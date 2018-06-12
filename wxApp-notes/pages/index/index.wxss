@@ -1,0 +1,14 @@
+/**index.wxss**/
+page{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528715967379&di=8d140db7c17b0c612f4848bbda51e32b&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3661244275%2C553052097%26fm%3D214%26gp%3D0.jpg');
+}
+
+.h1{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+button{
+  border: 2px solid black;
+}

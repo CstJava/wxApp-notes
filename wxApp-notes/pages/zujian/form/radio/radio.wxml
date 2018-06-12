@@ -1,0 +1,6 @@
+<!--pages/zujian/form/radio/radio.wxml-->
+<radio-group bindchange="radioChange">
+  <label wx:for="{{items}}">
+    <radio color="black" value='{{item.name}}' checked="{{item.checked}}">{{item.value}}</radio>
+  </label>
+</radio-group>

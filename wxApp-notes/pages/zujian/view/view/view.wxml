@@ -1,0 +1,7 @@
+<!--pages/zujian/view/view/view.wxml-->
+<view 
+class='nohover' 
+hover-class='hover'
+hover-start-time='0'
+hover-stay-time='1000'
+  >hover</view>

@@ -1,0 +1,6 @@
+<template name="baseWxml">
+  <view style='background:skyblue'>baseWxml</view>
+</template>
+<template is="baseWxml"/>
+
+<view>base的元素</view>

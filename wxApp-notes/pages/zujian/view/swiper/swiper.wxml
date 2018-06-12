@@ -1,0 +1,14 @@
+<!--pages/zujian/view/swiper/swiper.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay='{{autoplay}}'
+interval="{{interval}}" duration='{{duration}}'>
+  <block wx:for="{{item}}">
+    <swiper-item>
+      <view style='width:50%;height:100%;background:{{item}}'></view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view><switch bindtap='changeIndicatorDots'>indicator-dots</switch></view>
+<view><switch bindtap='changeAutoplay'>autoplay</switch></view>
+<slider bindchange='intervalChange' show-value min="500" max='2000'>interval</slider>
+<slider bindchange='durationChanges' show-value min="1000" max='5000'>duration</slider>

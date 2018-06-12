@@ -1,0 +1,4 @@
+/* pages/test/wxFor/wxFor.wxss */
+text{
+  font-size:10px
+}

@@ -1,0 +1,12 @@
+<!--pages/flex/flex.wxml-->
+<view class='column'>
+  <text>column wrap</text>
+  <view>test</view>
+  <view>test</view>
+</view>
+
+<view class='row'>
+  <text>row wrap</text>
+  <view>test</view>
+  <view>test</view>
+</view>

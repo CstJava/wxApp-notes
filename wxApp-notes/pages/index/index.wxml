@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <button class='h1' bindtap='view'>视图容器</button>
+    <block wx:if="{{view}}">
+      <navigator class='btu' wx:for="{{viewUrl}}" wx:key="view" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+    <!-- <button bindtap='test'>{{test}}</button> -->
+  </view>
+  <view>
+    <button class='h1' bindtap='form'>表单组件</button>
+    <block wx:if="{{form}}">
+      <navigator class='btu' wx:for="{{formUrl}}" wx:key="form" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+    <!-- <button bindtap='test'>{{test}}</button> -->
+  </view>
+   <view>
+    <button class='h1' bindtap='media'>媒体组件</button>
+    <block wx:if="{{media}}">
+      <navigator class='btu' wx:for="{{mediaUrl}}" wx:key="media" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+    <!-- <button bindtap='test'>{{test}}</button> -->
+  </view>
+</view>
+
+
+<!--template定义  -->
+<!-- <template name="test">
+  <text>template test</text>
+</template> -->
+<!--template引用  -->
+<!-- <template is="test"/> -->
+
+<!--引用外部wxml文件 不能多重引用 -->
+<!--即C import B ,B import A ,C不能引用A  -->
+<!-- <import src="../base.wxml"/> -->
+<!--引用文件如果有</template is="">,也会被引用  -->
+<!-- <template is="baseWxml"></template> -->
+
+<!--include 将目标文件除了<template/>外的全部代码引入到当前文件  -->
+<!-- <include src="../base.wxml" /> -->

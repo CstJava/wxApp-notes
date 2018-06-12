@@ -1,0 +1,19 @@
+/* pages/flex/flex.wxss */
+.column{
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+view{
+  border: 1px solid black;
+  margin-top: 10px;
+}

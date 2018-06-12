@@ -1,0 +1,10 @@
+<!--pages/事件/function.wxml-->
+<!--bind事件  -->
+<view id="bindParent" bindtap='bindtap' style='width:50px;height:50px;background:blue;margin-bottom:20px'>
+  <view id="bindChild" bindtap='bindtap' style="width:30px;height:30px;background:yellow"></view>
+</view>
+
+<!--catch 事件 阻止冒泡事件发生  -->
+<view id="catchParent" catchtap='catchtap' style='width:50px;height:50px;background:blue'>
+  <view id="catchChild" catchtap='catchtap' style="width:30px;height:30px;background:yellow"></view>
+</view>
