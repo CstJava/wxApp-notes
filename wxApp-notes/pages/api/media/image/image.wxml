@@ -1,0 +1,5 @@
+<!--pages/api/media/image/image.wxml-->
+<button bindtap='chooseImage'>wx.chooseImage选择图片或拍照</button>
+<image wx:if="{{imageSrc}}" src="{{imageSrc}}"></image>
+<button bindtap='previewImage'>wx.previewImage预览图片</button>
+<button bindtap='savaImage'>wx.saveImageToPhotosAlbum保存图片</button>

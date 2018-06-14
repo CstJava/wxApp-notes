@@ -1,31 +1,45 @@
 <!--index.wxml-->
-<view class="container">
+<view class="weui-grids">
   <view>
-    <button class='h1' bindtap='view'>视图容器</button>
-    <block wx:if="{{view}}">
-      <navigator class='btu' wx:for="{{viewUrl}}" wx:key="view" url="{{item.url}}"
+    <button class='h1' bindtap='socket'>Socket网络</button>
+    <block wx:if="{{socket}}">
+      <navigator class='btu' wx:for="{{socketUrl}}" wx:key="socket" url="{{item.url}}"
 >{{index}}:{{item.name}}</navigator>
     </block>
-    <!-- <button bindtap='test'>{{test}}</button> -->
   </view>
+
   <view>
-    <button class='h1' bindtap='form'>表单组件</button>
-    <block wx:if="{{form}}">
-      <navigator class='btu' wx:for="{{formUrl}}" wx:key="form" url="{{item.url}}"
->{{index}}:{{item.name}}</navigator>
-    </block>
-    <!-- <button bindtap='test'>{{test}}</button> -->
-  </view>
-   <view>
-    <button class='h1' bindtap='media'>媒体组件</button>
+    <button class='h1' bindtap='media'>Media媒体</button>
     <block wx:if="{{media}}">
       <navigator class='btu' wx:for="{{mediaUrl}}" wx:key="media" url="{{item.url}}"
 >{{index}}:{{item.name}}</navigator>
     </block>
-    <!-- <button bindtap='test'>{{test}}</button> -->
+  </view>
+
+  <view>
+    <button class='h1' bindtap='file'>File文件</button>
+    <block wx:if="{{file}}">
+      <navigator class='btu' wx:for="{{fileUrl}}" wx:key="file" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
+
+  <view>
+    <button class='h1' bindtap='storage'>Storage数据缓存</button>
+    <block wx:if="{{storage}}">
+      <navigator class='btu' wx:for="{{storageUrl}}" wx:key="storage" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
+
+  <view>
+    <button class='h1' bindtap='location'>Location位置</button>
+    <block wx:if="{{location}}">
+      <navigator class='btu' wx:for="{{locationUrl}}" wx:key="location" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
   </view>
 </view>
-
 
 <!--template定义  -->
 <!-- <template name="test">

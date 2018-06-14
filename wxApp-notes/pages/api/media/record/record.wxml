@@ -1,0 +1,6 @@
+<!--pages/api/media/record/record.wxml-->
+<button bindtap='startRecord'>wx.startRecord开始录音(10s)</button>
+<button bindtap='stopRecord'>wx.stopRecord停止录音</button>
+<button bindtap='playVoice'>wx.playVoice播放音频</button>
+<button bindtap='pauseVoice'>wx.pauseVoice停止音频</button>
+<button bindtap='stopVoice'>wx.stopVoice结束音频</button>

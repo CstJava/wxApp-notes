@@ -12,7 +12,17 @@
     "pages/zujian/form/checkbox/checkbox",
     "pages/zujian/form/picker/picker",
     "pages/zujian/form/radio/radio",
-    "pages/zujian/media/camera/camera"
+    "pages/zujian/media/camera/camera",
+    "pages/test/test",
+    "pages/api/socket/socket",
+    "pages/api/media/image/image",
+    "pages/api/media/record/record",
+    "pages/api/media/audio/audio",
+    "pages/api/media/video/video",
+    "pages/api/file/file",
+    "pages/api/storage/storage",
+    "pages/zujian/zujian",
+    "pages/api/location/location"
   ],
   "window": {
     "enablePullDownRefresh": true,
@@ -25,11 +35,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "api"
       },
       {
-        "pagePath": "pages/zujian/form/radio/radio",
-        "text": "test"
+        "pagePath": "pages/zujian/zujian",
+        "text": "组件"
       }
     ],
     "backgroundColor": "#37393A",

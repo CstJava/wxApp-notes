@@ -1,0 +1,12 @@
+<!--pages/api/media/video/video.wxml-->
+<button bindtap='chooseVideo'>chooseVideo添加视频</button>
+<video src='{{videoSrc}}'></video>
+
+<view class='section tc'>
+  <view class='h1'>视频组件</view>
+  <video bindlongtap='toggleVideo' id='myVideo' src='{{videoSrc}}' enable-danmu danmu-btn controls></video>
+  <view class='btn-area'>
+    <input bindblur='bindInputBlur'></input>
+    <button bindtap='bindSendDanmu'>发送弹幕</button>
+  </view>
+</view>

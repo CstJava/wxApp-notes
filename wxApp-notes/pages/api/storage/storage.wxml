@@ -1,0 +1,31 @@
+<!--pages/api/storage/storage.wxml-->
+
+<!--本地数据存储的大小限制为 10MB  -->
+<view class='h1'>异步缓存：缓存过程中进程继续进行</view>
+<form bindsubmit='setStorage'>
+  <input placeholder='name' name='name' value="{{name}}"></input>
+  <radio-group name='sex'>
+    <radio value='{{sex[0].name}}' checked='{{sex[0].checked}}'>{{sex[0].name}}</radio>
+    <radio value='{{sex[1].name}}' checked='{{sex[1].checked}}'>{{sex[1].name}}</radio>
+  </radio-group>
+  <button form-type='submit'>异步缓存数据</button> 
+</form>
+
+<view class='h1'>同步缓存：缓存结束继续进程</view>
+<form bindsubmit='setStorageSync'>
+  <input placeholder='email' name='email' value="{{email}}"></input>
+  <button form-type='submit'>同步缓存数据</button> 
+</form>
+<button bindtap='getStorage'>异步获取缓存数据</button>
+<!-- <button bindtap='getStorageSync'>同步获取缓存数据</button> -->
+<button bindtap='getStorageInfo'>异步获取storage相关信息</button>
+<!-- <button bindtap='getStorageInfoSync'>同步获取storage相关信息</button> -->
+
+<form bindsubmit='removeStorage'>
+  <input placeholder='指定删除的缓存key' name='removeKey'></input>
+  <button form-type='submit'>本地缓存中异步删除指定key</button>
+  <!-- <button bindtap='removeStorageSync'>本地缓存中同步删除指定key</button> -->
+</form>
+
+<button bindtap='clearStorage'>异步清空本地数据缓存</button>
+<!-- <button bindtap='clearStorageSync'>同步清空本地数据缓存</button> -->

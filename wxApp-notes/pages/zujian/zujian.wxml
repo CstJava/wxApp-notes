@@ -1,0 +1,28 @@
+<!--pages/zujian/zujian.wxml-->
+<view class="weui-grids">
+  <view>
+    <button class='h1' bindtap='view'>视图容器</button>
+    <block wx:if="{{view}}">
+      <navigator class='btu' wx:for="{{viewUrl}}" wx:key="view" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+    <!-- <button bindtap='test'>{{test}}</button> -->
+  </view>
+
+  <view>
+    <button class='h1' bindtap='form'>表单组件</button>
+    <block wx:if="{{form}}">
+      <navigator class='btu' wx:for="{{formUrl}}" wx:key="form" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
+
+   <view>
+    <button class='h1' bindtap='media'>媒体组件</button>
+    <block wx:if="{{media}}">
+      <navigator class='btu' wx:for="{{mediaUrl}}" wx:key="media" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
+
+</view>

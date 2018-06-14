@@ -8,24 +8,32 @@ base.baseTest();  //base.js test();
 
 Page({
   data: {
-    view: false,
-    form:false,
+    socket:false,
     media:false,
-    test:"text",
-    viewUrl: [
-      { name:'view',url:'../zujian/view/view/view'},
-      { name: 'scroll-view', url: '../zujian/view/scroll-view/scroll-view' },
-      { name: 'swiper', url: '../zujian/view/swiper/swiper' },
-      { name: 'movable-view', url: '../zujian/view/movable-view/movable-view' },
-      ],
-    formUrl: [
-      { name: 'checkbox', url: '../zujian/form/checkbox/checkbox' },
-      { name: 'picker', url: '../zujian/form/picker/picker' },
-      { name: 'radio', url: '../zujian/form/picker/picker' }
+    file:false,
+    storage:false,
+    test:"text",   
+    socketUrl: [
+      { name: 'socket', url: '../api/socket/socket' }
     ],
-    mediaUrl: [
-      { name: 'camera', url: '../zujian/media/camera/camera' },
-      
+
+    mediaUrl:[
+      { name: 'image', url: '../api/media/image/image' },
+      { name: 'record', url: '../api/media/record/record' },
+      { name: 'audio', url: '../api/media/audio/audio' },
+      { name: 'video', url: '../api/media/video/video' }
+    ],
+
+    fileUrl:[
+      { name: 'file', url: '../api/file/file' },
+    ],
+
+    storageUrl: [
+      { name: 'storage', url: '../api/storage/storage' }
+    ],
+
+    locationUrl: [
+      { name: 'location', url: '../api/location/location' }
     ]
 
   },
@@ -50,7 +58,7 @@ Page({
   //当处理完数据刷新事件，可以用wx.stopPullDownRefresh()函数停止页面下拉刷新
   onPullDownRefresh:function(){
     console.log("onPullDownRefresh函数");
-    wx.stopPullDownRefresh();
+    // wx.stopPullDownRefresh();
   },
   //页面上拉触底事件的处理函数
   onReachBottom:function(){
@@ -66,19 +74,29 @@ Page({
     console.log(e)
   },
   //开发者可以添加任意的函数或数据到object参数中，在页面的函数中用this可以访问
-  view: function () {
+  socket: function () {
     this.setData({
-      view:!this.data.view
-    })
-  },
-  form: function () {
-    this.setData({
-      form: !this.data.form
+      socket: !this.data.socket
     })
   },
   media: function () {
     this.setData({
       media: !this.data.media
     })
-  }
+  },
+  file: function () {
+    this.setData({
+      file: !this.data.file
+    })
+  },
+  storage: function () {
+    this.setData({
+      storage: !this.data.storage
+    })
+  },
+  location: function () {
+    this.setData({
+      location: !this.data.location
+    })
+  },
 })

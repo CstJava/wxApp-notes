@@ -1,0 +1,8 @@
+<!--pages/api/socket/socket.wxml-->
+<button bindtap='request'>wx.request发送请求</button>
+<button bindtap='uploadFile'>wx.uploadFile上传文件</button>
+<button bindtap='downloadFile'>wx.downloadFile下载文件</button>
+<button bindtap='connectSocket'>wx.connectSocket创建一个WebSocket连接</button>
+<button bindtap='sendSocketMessage'>wx.sendSocketMessage发送WebSocket消息</button>
+<button bindtap='onSocketMessage'>wx.onSocketMessage接收WebSocket消息</button>
+<button bindtap='closeSocket'>wx.closeSocket关闭WebSocket连接</button>

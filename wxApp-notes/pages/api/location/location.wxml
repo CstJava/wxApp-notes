@@ -1,0 +1,4 @@
+<!--pages/api/location/location.wxml-->
+<button bindtap='getLocation'>获取当前的地理位置、速度</button>
+<button bindtap='chooseLocation'>打开地图选择位置</button>
+<button bindtap='openLocation'>查看位置</button>

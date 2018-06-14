@@ -1,0 +1,5 @@
+<!--pages/api/file/file.wxml-->
+<button bindtap='chooseImage'>选择图片</button>
+<button bindtap='getSavedFileList'>获取本地已保存的文件列表</button>
+<button bindtap='removeSavedFile'>删除本地存储的文件</button>
+<button bindtap='openDocument'>新页面打开文档</button>
