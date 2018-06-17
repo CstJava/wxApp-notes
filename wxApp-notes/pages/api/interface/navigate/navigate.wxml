@@ -1,0 +1,6 @@
+<!--pages/api/interface/navigate/navigate.wxml-->
+<button bindtap='navigateTo'>保留当前页面，跳转到应用内的某个页面</button>
+<button bindtap='redirectTo'>关闭当前页面，跳转到应用内的某个页面</button>
+<button bindtap='reLaunch'>关闭所有页面，打开到应用内的某个页面</button>
+<button bindtap='switchTab'>跳转到tabBar页面，并关闭其他所有非tabBar页面</button>
+<button bindtap='navigateBack'>关闭当前页面，返回上一页面或多级页面</button>

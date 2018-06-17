@@ -1,0 +1,4 @@
+<!--pages/api/device/screenBrightness/screenBrightness.wxml-->
+<slider bindchange='setScreenBrightness' min='0' max='100'>亮度</slider>
+<button bindtap='getScreenBrightness'>获取屏幕亮度</button>
+<button bindtap='setKeepScreenOn'>保持屏幕常亮(离开小程序后失效)</button>

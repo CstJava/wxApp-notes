@@ -1,0 +1,10 @@
+<!--pages/api/openInterface/payment/payment.wxml-->
+<view class='page-body'>
+  <view class='page-section'>
+    <view>支付金额</view>
+    <view class='price'>0.01</view>
+    <view class='btn-area'>
+      <button bindtap='requestPayment'>微信支付</button>
+    </view>
+  </view>
+</view>

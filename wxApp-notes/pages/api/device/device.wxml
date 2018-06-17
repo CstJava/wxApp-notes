@@ -1,0 +1,10 @@
+<!--pages/api/device/device.wxml-->
+<button bindtap='getSystemInfo'>异步获取系统信息</button>
+<!-- <button bindtap='getSystemInfoSync'>同步获取系统信息</button> -->
+
+<button bindtap='getNetworkType'>获取网络类型</button>
+
+<input bindchange="phoneNum"></input>
+<button bindtap='makePhoneCall'>拨打电话</button>
+
+<button bindtap='scanCode'>扫码</button>

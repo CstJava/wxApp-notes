@@ -1,0 +1,14 @@
+<!--pages/api/device/phoneContact/phoneContact.wxml-->
+<form bindsubmit='addPhoneContact'>
+  <input placeholder='昵称' name='nickName'></input>
+  <input placeholder='姓氏' name='lastName'></input>
+  <input placeholder='中间名' name='middleName'></input>
+  <input placeholder='名字' name='firstName'></input>
+  <input placeholder='备注' name='remark'></input>
+  <input placeholder='手机号' name='mobilePhoneNumber'></input>
+  <input placeholder='微信号' name='weChatNumber'></input>
+
+  <view class='h1'>更多属性，详情请看官方api</view>
+  <!--“新增联系人”或“添加到已有联系人”  -->
+  <button form-type='submit'>addPhoneContact</button>
+</form>

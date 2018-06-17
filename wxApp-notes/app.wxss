@@ -20,4 +20,8 @@
   transition: all 0.3s;
 }
 
+input{
+  border: 1px solid black;
+}
+
 @import "weui.wxss";

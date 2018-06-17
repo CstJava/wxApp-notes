@@ -22,7 +22,20 @@
     "pages/api/file/file",
     "pages/api/storage/storage",
     "pages/zujian/zujian",
-    "pages/api/location/location"
+    "pages/api/location/location",
+    "pages/api/device/device",
+    "pages/api/device/bluetooth/bluetooth",
+    "pages/api/device/screenBrightness/screenBrightness",
+    "pages/api/device/vibrate/vibrate",
+    "pages/api/device/phoneContact/phoneContact",
+    "pages/api/device/wifi/wifi",
+    "pages/api/interface/feedback/feedback",
+    "pages/api/interface/navigationBar/navigationBar",
+    "pages/api/interface/navigate/navigate",
+    "pages/api/interface/animation/animation",
+    "pages/api/interface/pageScrollTo/pageScrollTo",
+    "pages/api/interface/selectorQuery/selectorQuery",
+    "pages/api/openInterface/payment/payment"
   ],
   "window": {
     "enablePullDownRefresh": true,

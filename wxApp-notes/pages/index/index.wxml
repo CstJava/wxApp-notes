@@ -39,7 +39,42 @@
 >{{index}}:{{item.name}}</navigator>
     </block>
   </view>
+
+  <view>
+    <button class='h1' bindtap='device'>Device设备</button>
+    <block wx:if="{{device}}">
+      <navigator class='btu' wx:for="{{deviceUrl}}" wx:key="device" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
+
+  <view>
+    <button class='h1' bindtap='interface'>interface界面</button>
+    <block wx:if="{{interface}}">
+      <navigator class='btu' wx:for="{{interfaceUrl}}" wx:key="interface" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+      <button bindtap='setTabBarBadge'>为tabBar某一项的右上角添加文本</button>
+      <button bindtap='removeTabBarBadge'>移除tabBar某一项右上角的文本</button>
+      <button bindtap='showTabBarRedDot'>显示tabBar某一项的右上角的红点</button> 
+      <button bindtap='hideTabBarRedDot'>隐藏 tabBar 某一项的右上角的红点</button> 
+      <button bindtap='setTabBarStyle'>动态设置tabBar的整体样式</button> 
+      <button bindtap='setTabBarItem'>动态设置tabBar某一项的内容</button> 
+      <button bindtap='showTabBar'>显示tabBar</button> 
+      <button bindtap='hideTabBar'>隐藏tabBar</button> 
+    </block>
+  </view>
+
+  <view>
+    <button class='h1' bindtap='openInterface'>开放接口</button>
+    <block wx:if="{{openInterface}}">
+      <navigator class='btu' wx:for="{{openInterfaceUrl}}" wx:key="openInterface" url="{{item.url}}"
+>{{index}}:{{item.name}}</navigator>
+    </block>
+  </view>
 </view>
+
+<!--需要获取权限，针对非个人开发者  -->
+<!-- <button open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>授权</button> -->
 
 <!--template定义  -->
 <!-- <template name="test">

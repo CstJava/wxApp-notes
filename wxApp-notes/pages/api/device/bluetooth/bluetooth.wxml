@@ -1,0 +1,5 @@
+<!--pages/api/device/bluetooth/bluetooth.wxml-->
+<view class='h1'>蓝牙适配器接口(需在真机上)</view>
+<button bindtap='openBluetoothAdapter'>初始化小程序蓝牙模块</button>
+<button bindtap='closeBluetoothAdapter'>关闭蓝牙模块</button>
+<button bindtap='getBluetoothAdapterState'>获取本机蓝牙适配器状态</button>

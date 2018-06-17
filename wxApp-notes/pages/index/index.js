@@ -6,12 +6,17 @@ const app = getApp()
 var base = require('../base.js');
 base.baseTest();  //base.js test();
 
+var tabBar = require('tabBar.js');
+
 Page({
   data: {
     socket:false,
     media:false,
     file:false,
     storage:false,
+    device:false,
+    interface:false,
+    openInterface:false,
     test:"text",   
     socketUrl: [
       { name: 'socket', url: '../api/socket/socket' }
@@ -34,11 +39,34 @@ Page({
 
     locationUrl: [
       { name: 'location', url: '../api/location/location' }
-    ]
+    ],
 
+    deviceUrl: [
+      { name: 'device', url: '../api/device/device' },
+      { name: 'bluetooth', url: '../api/device/bluetooth/bluetooth' },
+      { name: 'screenBrightness', url: '../api/device/screenBrightness/screenBrightness' },
+      { name: 'vibrate', url: '../api/device/vibrate/vibrate' },
+      { name: 'phoneContact', url: '../api/device/phoneContact/phoneContact' },
+      { name: 'wifi', url: '../api/device/wifi/wifi' }
+    ],
+
+    interfaceUrl: [
+      { name: 'feedback', url: '../api/interface/feedback/feedback' },
+      { name: 'navigationBar', url: '../api/interface/navigationBar/navigationBar' },
+      { name: 'navigate', url: '../api/interface/navigate/navigate' },
+      { name: 'animation', url: '../api/interface/animation/animation' },
+      { name: 'pageScrollTo', url: '../api/interface/pageScrollTo/pageScrollTo' },
+      { name: 'selectorQuery', url: '../api/interface/selectorQuery/selectorQuery' },
+      { name: 'canvas详情请看官方api', url: './index' },
+    ],
+
+    openInterfaceUrl: [
+      { name: 'payment', url: '../api/openInterface/payment/payment' },
+
+    ],
   },
   onLoad:function(){
-    console.log("onLoad生命周期函数，只执行一次")
+    console.log("onLoad生命周期函数，只执行一次");
   },
   onReady:function(){
     console.log("onReady生命周期函数，只执行一次")
@@ -58,7 +86,7 @@ Page({
   //当处理完数据刷新事件，可以用wx.stopPullDownRefresh()函数停止页面下拉刷新
   onPullDownRefresh:function(){
     console.log("onPullDownRefresh函数");
-    // wx.stopPullDownRefresh();
+    wx.stopPullDownRefresh();
   },
   //页面上拉触底事件的处理函数
   onReachBottom:function(){
@@ -73,6 +101,14 @@ Page({
     }),
     console.log(e)
   },
+  setTabBarBadge: tabBar.setTabBarBadge,
+  removeTabBarBadge: tabBar.removeTabBarBadge,
+  showTabBarRedDot: tabBar.showTabBarRedDot,
+  hideTabBarRedDot: tabBar.hideTabBarRedDot,
+  setTabBarStyle: tabBar.setTabBarStyle,
+  setTabBarItem: tabBar.setTabBarItem,
+  showTabBar: tabBar.showTabBar,
+  hideTabBar: tabBar.hideTabBar,
   //开发者可以添加任意的函数或数据到object参数中，在页面的函数中用this可以访问
   socket: function () {
     this.setData({
@@ -99,4 +135,23 @@ Page({
       location: !this.data.location
     })
   },
+  device: function () {
+    this.setData({
+      device: !this.data.device
+    })
+  },
+  interface: function () {
+    this.setData({
+      interface: !this.data.interface
+    })
+  },
+  openInterface: function () {
+    this.setData({
+      openInterface: !this.data.openInterface
+    })
+  },
+  // getPhoneNumber:function(e){
+  //   console.log(e.datail)
+  // }
+
 })

@@ -1,0 +1,5 @@
+<!--pages/api/device/wifi/wifi.wxml-->
+<button bindtap='startWifi'>初始化wifi模块</button>
+<button bindtap='stopWifi'>关闭wifi模块</button>
+
+<view class='h1'>更多属性，详情请看官方api</view>

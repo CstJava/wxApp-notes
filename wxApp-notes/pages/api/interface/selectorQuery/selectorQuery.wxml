@@ -1,0 +1,10 @@
+<!--pages/api/interface/selectorQuery/selectorQuery.wxml-->
+<view id='outer'>
+  <view id='testId'>{{textId}}</view>
+  <view id='classId1' class='testClass'>{{textClass}}</view>
+  <view id='classId2' class='testClass'>{{textClass}}</view>
+</view>
+
+<button class='btu' bindtap='boundingClientRect'>select</button>
+<button class='btu' bindtap='boundingClientRectAll'>selectAll</button>
+

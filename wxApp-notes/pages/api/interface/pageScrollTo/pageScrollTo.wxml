@@ -1,0 +1,4 @@
+<!--pages/api/interface/pageScrollTo/pageScrollTo.wxml-->
+<button bindtap='pageScrollToBottom'>将页面滚动到底部</button>
+<view style='width:100%;height:700px;background:skyblue'></view>
+<button bindtap='pageScrollToTop'>将页面滚动到顶部</button>

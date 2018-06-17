@@ -1,0 +1,10 @@
+<!--pages/api/interface/feedback/feedback.wxml-->
+<button bindtap='showToast'>显示消息提示框</button>
+
+<button bindtap='showLoading'>显示loading提示框</button>
+
+<button bindtap='hideLoading'>关闭loading提示框</button>
+
+<button bindtap='showModal'>显示模态弹窗</button>
+
+<button bindtap='showActionSheet'>显示操作菜单</button>

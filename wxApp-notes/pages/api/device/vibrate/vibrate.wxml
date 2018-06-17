@@ -1,0 +1,3 @@
+<!--pages/api/device/vibrate/vibrate.wxml-->
+<button bindtap='vibrateLong'>长时间振动</button>
+<button bindtap='vibrateShort'>短时间振动</button>
